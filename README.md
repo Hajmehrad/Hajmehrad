@@ -49,8 +49,7 @@ class Hajmehrad:
 <div align="center">
 
 [![Bio Link](https://img.shields.io/badge/🌐_Bio_Link-C9A96E?style=for-the-badge&logoColor=black)](https://hajmehrad.github.io/links)
-[![Instagram](https://img.shields.io/badge/Instagram-E1306C?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/mehrad._.f._.a)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Haj0_0mehrad)
+
 
 </div>
 
