@@ -1,45 +1,23 @@
-import urllib.request
-import json
-import re
+name: Update README Stats
 
-url = "https://api.github.com/users/Hajmehrad"
-req = urllib.request.Request(url, headers={"User-Agent": "readme-bot"})
-data = json.loads(urllib.request.urlopen(req).read())
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
-repos_url = "https://api.github.com/users/Hajmehrad/repos?per_page=100"
-req2 = urllib.request.Request(repos_url, headers={"User-Agent": "readme-bot"})
-repos = json.loads(urllib.request.urlopen(req2).read())
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
 
-total_stars = sum(r["stargazers_count"] for r in repos)
-total_forks = sum(r["forks_count"] for r in repos)
+      - name: Run update script
+        run: python update_stats.py
 
-langs = {}
-for r in repos:
-    if r["language"]:
-        langs[r["language"]] = langs.get(r["language"], 0) + 1
-top_lang = max(langs, key=langs.get) if langs else "Python"
-
-new_stats = f"""<!-- STATS:START -->
-| | |
-|---|---|
-| 🗂 Public Repos | {data['public_repos']} |
-| ⭐ Total Stars | {total_stars} |
-| 🐍 Main Language | {top_lang} |
-| 👥 Followers | {data['followers']} |
-| 🔀 Forks | {total_forks} |
-<!-- STATS:END -->"""
-
-with open("README.md", "r", encoding="utf-8") as f:
-    content = f.read()
-
-content = re.sub(
-    r"<!-- STATS:START -->.*?<!-- STATS:END -->",
-    new_stats,
-    content,
-    flags=re.DOTALL
-)
-
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(content)
-
-print("✅ Stats updated!")
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "🤖 Auto-update stats"
+          git push
