@@ -50,7 +50,7 @@ class Hajmehrad:
 
 <div align="center">
 
-[![Bio Link](https://img.shields.io/badge/🌐_Bio_Link-C9A96E?style=for-the-badge&logoColor=black)](https://hajmehrad.github.io/links)
+[![Bio Link](https://img.shields.io/badge/🌐_Bio_Link-C9A96E?style=for-the-badge&logoColor=black)](https://hajmehrad.github.io/Link/)
 
 </div>
 
