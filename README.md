@@ -52,6 +52,8 @@ class Hajmehrad:
 
 [![Bio Link](https://img.shields.io/badge/🌐_Bio_Link-C9A96E?style=for-the-badge&logoColor=black)](https://hajmehrad.github.io/Link/)
 
+[![Email](https://img.shields.io/badge/📧_Contact_Me-2F5D8C?style=for-the-badge&logoColor=white)](mailto:mehrad.mehrad.mehrad1487@gmail.com?subject=GitHub%20Contact&body=Hi%20Hajmehrad,%0A%0AI%20found%20your%20GitHub%20profile%20and%20would%20like%20to%20get%20in%20touch.%0A)
+
 </div>
 
 ---
