@@ -37,7 +37,7 @@ class Hajmehrad:
 <!-- STATS:START -->
 | | |
 |---|---|
-| 🗂 Public Repos | 5 |
+| 🗂 Public Repos | 6 |
 | ⭐ Total Stars | 7 |
 | 🐍 Main Language | Python |
 | 👥 Followers | 1 |
