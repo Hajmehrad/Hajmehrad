@@ -37,9 +37,9 @@ class Hajmehrad:
 <!-- STATS:START -->
 | | |
 |---|---|
-| 🗂 Public Repos | 5 |
+| 🗂 Public Repos | 6 |
 | ⭐ Total Stars | 9 |
-| 🐍 Main Language | Python |
+| 🐍 Main Language | HTML |
 | 👥 Followers | 1 |
 | 🔀 Forks | 0 |
 <!-- STATS:END -->
