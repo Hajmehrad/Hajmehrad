@@ -37,7 +37,7 @@ class Hajmehrad:
 <!-- STATS:START -->
 | | |
 |---|---|
-| 🗂 Public Repos | 6 |
+| 🗂 Public Repos | 5 |
 | ⭐ Total Stars | 8 |
 | 🐍 Main Language | HTML |
 | 👥 Followers | 1 |
